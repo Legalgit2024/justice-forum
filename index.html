@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTICE MINDS 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+        <h1>JUSTICE MINDS 2024</h1>
+        <div class="participants">
+            <h2>Participants</h2>
+            <div class="add-participant">
+                <input type="text" id="participant-input" placeholder="New participant name">
+                <button id="add-participant">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+        <!-- Project Alpha Card -->
+        <div class="project-card">
+            <h2>
+                Project Alpha
+                <div class="controls">
+                    <button data-action="add">+</button>
+                    <button data-action="close">X</button>
+                </div>
+            </h2>
+            <div class="file-grid">
+                <div class="file-box">Doc1</div>
+                <div class="file-box">Image1</div>
+                <div class="file-box">Sheet1</div>
+            </div>
+        </div>
+
+        <!-- Project Beta Card -->
+        <div class="project-card">
+            <h2>
+                Project Beta
+                <div class="controls">
+                    <button data-action="add">+</button>
+                    <button data-action="close">X</button>
+                </div>
+            </h2>
+            <div class="file-grid">
+                <div class="file-box">Report</div>
+                <div class="file-box">Pres</div>
+                <div class="file-box">Budget</div>
+            </div>
+        </div>
+
+        <!-- Dropdowns Card -->
+        <div class="dropdowns-card">
+            <h2>
+                Dropdowns Card
+                <div class="controls">
+                    <button data-action="add">+</button>
+                    <button data-action="close">X</button>
+                </div>
+            </h2>
+            <div class="dropdown">Dropdown 1</div>
+            <div class="dropdown">Dropdown 2</div>
+            <div class="dropdown">Dropdown 3</div>
+            <div class="comment-section">
+                <textarea id="comment-input" placeholder="Add a comment..."></textarea>
+                <button id="submit-comment">Submit Comment</button>
+            </div>
+        </div>
+
+        <!-- Message Input -->
+        <div class="message-input">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
